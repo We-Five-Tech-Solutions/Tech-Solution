@@ -1,0 +1,19 @@
+# Node modules
+Frontend/frontend/node_modules/
+Backend/node_modules/
+
+# Build output (if you build React)
+Frontend/frontend/build/
+
+# Environment variables
+Frontend/frontend/.env
+Backend/.env
+
+# Logs
+*.log
+
+# OS junk
+.DS_Store
+
+# Optional: MySQL dumps or backups
+# *.sql
