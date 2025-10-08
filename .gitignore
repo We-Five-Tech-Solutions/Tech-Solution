@@ -1,19 +1,58 @@
-# Node modules
+# --- Node modules ---
 Frontend/frontend/node_modules/
 Backend/node_modules/
 
-# Build output (if you build React)
-Frontend/frontend/build/
+# --- Vite Build output ---
+Frontend/frontend/dist/
+Backend/dist/
+Backend/build/
 
-# Environment variables
+# --- Environment files ---
 Frontend/frontend/.env
+Frontend/frontend/.env.local
+Frontend/frontend/.env.production
+Frontend/frontend/.env.development
 Backend/.env
+Backend/.env.local
+Backend/.env.production
+Backend/.env.development
 
-# Logs
+# --- Logs ---
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
-# OS junk
+# --- OS / Editor files ---
 .DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
 
-# Optional: MySQL dumps or backups
-# *.sql
+# --- Test / Coverage ---
+coverage/
+*.lcov
+
+# --- Temporary / Cache files ---
+tmp/
+temp/
+*.tmp
+.cache/
+.vite/
+.eslintcache
+
+# --- Dependency locks (optional) ---
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# --- Optional: Database dumps / backups ---
+*.sql
+*.sqlite
+*.db
+
+# --- Optional: Env backups / examples ---
+.env.backup
+.env.example
