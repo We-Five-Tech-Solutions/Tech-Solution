@@ -14,7 +14,7 @@ function Companies() {
   return (
     <section className="w-full py-20 px-6  text-gray-900">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-4xl font-medium mb-6">Our Clients</h2>
+        <h2 className="text-3xl font-medium mb-6">Our Clients</h2>
         <p className="text-gray-600 mb-12">
           We are proud to work with these amazing companies.
         </p>
