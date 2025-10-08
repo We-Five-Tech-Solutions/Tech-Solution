@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="flex flex-col-reverse md:flex-row items-center justify-between min-h-screen px-6 md:px-16 lg:px-24 bg-gray-50"
+      className="flex flex-col-reverse md:flex-row items-center justify-between min-h-screen px-6 md:px-16 lg:px-24 bg-white"
     >
       {/* Left Side - Text Content */}
       <div className="text-center md:text-left md:w-1/2 space-y-6">
@@ -29,7 +29,7 @@ export default function Hero() {
         <img
           src={HeroImage}
           alt="Five Spark Solutions"
-          className="w-full max-w-md md:max-w-lg object-cover rounded-2xl shadow-lg"
+          className="w-full max-w-md md:max-w-lg object-cover rounded-2xl"
         />
       </div>
     </section>

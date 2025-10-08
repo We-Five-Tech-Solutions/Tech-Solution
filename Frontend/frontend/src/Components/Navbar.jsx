@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
-
+import LOGO from "/favicon.png";
 const NavbarMenu = [
   { id: 1, title: "Home", path: "/" },
   { id: 2, title: "About", path: "/about" },
@@ -17,14 +17,17 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 w-full bg-white shadow-sm z-50">
-      <div className="container mx-auto py-5 flex justify-between items-center px-4">
+      <div className="container mx-auto py-3 flex justify-between items-center px-4">
         {/* Logo */}
         <Link
           to="/"
-          className="font-semibold text-2xl tracking-tight"
+          className="font-normal text-lg tracking-tight"
           onClick={() => setOpen(false)}
         >
-          Five Spark Software Solutions
+          <div className="flex justify-center items-center gap-2">
+            <img src={LOGO} alt="logo" width={50} height={50} /> Five Spark
+            Software Solutions
+          </div>
         </Link>
 
         {/* Desktop Menu */}
@@ -33,7 +36,7 @@ export default function Navbar() {
             <li key={menu.id}>
               <Link
                 to={menu.path}
-                className="text-gray-700 hover:text-blue-600 transition-colors duration-300"
+                className="text-gray-700 hover:text-blue-700 transition-colors duration-300"
               >
                 {menu.title}
               </Link>
