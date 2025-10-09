@@ -38,7 +38,7 @@ function WhyOurCompany() {
     <section className="w-full py-20 px-6 text-center text-gray-900">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-medium text-center mb-6">
-          Why Our Company ?
+          Why Choose Five Spark ?
         </h2>
         {/* <p className="text-gray-600 text-center mb-12">
           We offer a variety of services to help your business succeed. Explore
