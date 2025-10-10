@@ -1,85 +1,86 @@
 import Footer from "../Components/Footer";
 
-const ServiceDetailInfo = () => {
-  const detailedServices = [
-    {
-      title: "Web Development",
-      description:
-        "Our web development team creates high-performance, responsive websites tailored to your business goals. We ensure seamless user experience, fast loading times, and full mobile compatibility.",
-      features: [
-        "Custom front-end & back-end solutions",
-        "Responsive and SEO-friendly design",
-        "E-commerce & CMS integration",
-      ],
-      emoji: "💻",
-    },
-    {
-      title: "Mobile App Development",
-      description:
-        "We design and build mobile apps that deliver smooth, intuitive experiences for iOS and Android. From concept to deployment, we ensure performance and usability.",
-      features: [
-        "Cross-platform (React Native, Flutter)",
-        "App store optimization (ASO)",
-        "Ongoing maintenance & updates",
-      ],
-      emoji: "📱",
-    },
-    {
-      title: "SEO Optimization",
-      description:
-        "Our SEO experts help you rank higher and reach your audience faster. We use proven strategies to improve visibility, traffic, and conversions.",
-      features: [
-        "Keyword research & strategy",
-        "On-page & technical SEO",
-        "Monthly performance reporting",
-      ],
-      emoji: "🔍",
-    },
-    {
-      title: "Graphic Design",
-      description:
-        "Our creative designers craft visuals that capture attention and tell your brand’s story. From logos to full-scale brand identity, we design with purpose.",
-      features: [
-        "Brand identity & logo design",
-        "Social media graphics & marketing assets",
-        "Print & digital materials",
-      ],
-      emoji: "🎨",
-    },
-    {
-      title: "Digital Marketing",
-      description:
-        "Grow your brand and connect with your audience through data-driven marketing campaigns across multiple platforms.",
-      features: [
-        "Social media marketing (SMM)",
-        "Email & content marketing",
-        "Pay-per-click (PPC) advertising",
-      ],
-      emoji: "📈",
-    },
-    {
-      title: "Business Consulting",
-      description:
-        "We provide strategic consulting services to help businesses streamline operations, boost efficiency, and grow sustainably.",
-      features: [
-        "Process optimization",
-        "Market analysis & strategy planning",
-        "Digital transformation guidance",
-      ],
-      emoji: "🧑‍💼",
-    },
-  ];
+const detailedServices = [
+  {
+    title: "Web Development",
+    description:
+      "Our web development team creates high-performance, responsive websites tailored to your business goals. We ensure seamless user experience, fast loading times, and full mobile compatibility.",
+    features: [
+      "Custom front-end & back-end solutions",
+      "Responsive and SEO-friendly design",
+      "E-commerce & CMS integration",
+    ],
+    emoji: "💻",
+  },
+  {
+    title: "Mobile App Development",
+    description:
+      "We design and build mobile apps that deliver smooth, intuitive experiences for iOS and Android. From concept to deployment, we ensure performance and usability.",
+    features: [
+      "Cross-platform (React Native, Flutter)",
+      "App store optimization (ASO)",
+      "Ongoing maintenance & updates",
+    ],
+    emoji: "📱",
+  },
+  {
+    title: "SEO Optimization",
+    description:
+      "Our SEO experts help you rank higher and reach your audience faster. We use proven strategies to improve visibility, traffic, and conversions.",
+    features: [
+      "Keyword research & strategy",
+      "On-page & technical SEO",
+      "Monthly performance reporting",
+    ],
+    emoji: "🔍",
+  },
+  {
+    title: "Graphic Design",
+    description:
+      "Our creative designers craft visuals that capture attention and tell your brand’s story. From logos to full-scale brand identity, we design with purpose.",
+    features: [
+      "Brand identity & logo design",
+      "Social media graphics & marketing assets",
+      "Print & digital materials",
+    ],
+    emoji: "🎨",
+  },
+  {
+    title: "Digital Marketing",
+    description:
+      "Grow your brand and connect with your audience through data-driven marketing campaigns across multiple platforms.",
+    features: [
+      "Social media marketing (SMM)",
+      "Email & content marketing",
+      "Pay-per-click (PPC) advertising",
+    ],
+    emoji: "📈",
+  },
+  {
+    title: "Business Consulting",
+    description:
+      "We provide strategic consulting services to help businesses streamline operations, boost efficiency, and grow sustainably.",
+    features: [
+      "Process optimization",
+      "Market analysis & strategy planning",
+      "Digital transformation guidance",
+    ],
+    emoji: "🧑‍💼",
+  },
+];
 
+const ServiceDetailInfo = () => {
   return (
-    <div className="flex flex-col min-h-screen bg-gray-50">
+    <div className="flex flex-col min-h-screen">
       {/* Header Section */}
-      <section className="text-center py-35 px-6 bg-white shadow-sm">
-        <h1 className="text-4xl md:text-5xl font-semibold mb-10 text-gray-900">
+      <section className="text-center py-35 px-6 bg-white pt-24 md:pt-28">
+        <h1 className="text-4xl md:text-3xl font-semibold mb-10 text-gray-900">
           Discover Our Expertise
         </h1>
         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-          We offer a full range of digital services designed to elevate your business.
-          From development to design, our experts ensure every detail aligns with your goals.
+          We offer a full range of digital services designed to elevate your
+          business. From development to design, our experts ensure every detail
+          aligns with your goals.
         </p>
       </section>
 

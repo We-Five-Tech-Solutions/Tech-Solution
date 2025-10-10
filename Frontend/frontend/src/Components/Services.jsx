@@ -33,6 +33,7 @@ export default function Services() {
       description: "Expert advice to optimize your business operations and strategy.",
       emoji: "🧑‍💼",
     },
+   
   ];
 
   return (

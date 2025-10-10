@@ -8,7 +8,7 @@ export default function Contact() {
 
   return (
     <>
-      <section className="py-20 px-6 bg-gray-50 text-gray-900">
+      <section className="py-20 px-6 bg-white text-gray-900 pt-24 md:pt-28">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
           <h2 className="text-4xl font-extrabold mb-4 text-center">

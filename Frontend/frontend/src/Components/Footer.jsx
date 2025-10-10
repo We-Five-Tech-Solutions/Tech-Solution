@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { FaLinkedin, FaFacebook, FaTwitter, FaWhatsapp } from "react-icons/fa";
 
-// src/components/Footer.jsx
 export default function Footer() {
   return (
     <footer className="w-full bg-gray-900 text-white">
@@ -94,7 +93,7 @@ export default function Footer() {
           <div className="rounded-lg overflow-hidden shadow-lg">
             <iframe
               title="Company Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019999999!2d-122.41941508468176!3d37.77492927975968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDQ2JzI5LjgiTiAxMjLCsDI1JzA2LjAiVw!5e0!3m2!1sen!2sus!4v1633028472719!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248849.90089917116!2d77.46612635126417!3d12.953945614274408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1760079638833!5m2!1sen!2sin"
               allowFullScreen
               loading="lazy"
               className="border-0 w-full h-40"
@@ -106,7 +105,7 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="bg-gray-800 text-center py-4 text-gray-400 text-sm">
         <p>
-          © {new Date().getFullYear()}{" "}
+          © {new Date().getFullYear()},{" "}
           <span className="text-white font-semibold">
             Five Spark Software Solutions
           </span>

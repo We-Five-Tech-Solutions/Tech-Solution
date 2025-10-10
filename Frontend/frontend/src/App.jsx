@@ -1,23 +1,81 @@
-import { Suspense } from "react";
-import { Routes, Route } from "react-router-dom";
-import Loading from "./pages/Loading";
+import { Routes, Route, BrowserRouter, useLocation } from "react-router-dom";
+import { AnimatePresence, motion } from "framer-motion";
+
+import Navbar from "./Components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import Navbar from "./Components/Navbar";
 import ServiceDetailInfo from "./pages/ServiceDetailInfo";
-function App() {
+
+
+function AnimatedRoutes() {
+  const location = useLocation();
+
   return (
-    <Suspense fallback={<Loading />}>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/services" element={<ServiceDetailInfo />} />
-        <Route path="/contact" element={<Contact />} />
+    <AnimatePresence mode="wait">
+      <Routes location={location} key={location.pathname}>
+        <Route
+          path="/"
+          element={
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.4, ease: "easeOut" }}
+            >
+              <Home />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/about"
+          element={
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.4, ease: "easeOut" }}
+            >
+              <About />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/services"
+          element={
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.4, ease: "easeOut" }}
+            >
+              <ServiceDetailInfo />
+            </motion.div>
+          }
+        />
+        <Route
+          path="/contact"
+          element={
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.4, ease: "easeOut" }}
+            >
+              <Contact />
+            </motion.div>
+          }
+        />
       </Routes>
-    </Suspense>
+    </AnimatePresence>
   );
 }
 
-export default App;
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Navbar />
+      <AnimatedRoutes />
+    </BrowserRouter>
+  );
+}

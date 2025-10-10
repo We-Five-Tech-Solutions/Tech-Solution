@@ -32,6 +32,12 @@ function WhyOurCompany() {
         "Yours goals drive our actions. We deliver solutions that empower your growth",
       emoji: "🤝",
     },
+    {
+      title: "Expert Team",
+      description:
+        "A passionate and skilled team committed to delivering excellence through innovation and precision.",
+      emoji: "🧠",
+    },
   ];
 
   return (

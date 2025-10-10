@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-
 @theme {
   /* 🎨 Brand Fonts */
   /* --font-poppins: "Poppins", sans-serif; */
@@ -8,6 +7,7 @@
   /* 🌈 Brand Colors */
   --color-primary: #f7ba34;
   --color-secondary: #69a79c;
+  --color-navHover: #f7c159;
   --color-light: #f7f7f7;
   --color-dark: #333333;
   --color-dark2: #999999;
@@ -36,19 +36,6 @@ body {
 
 .navbar a {
   @apply text-gray-700 hover:text-[var(--color-secondary)] transition-colors duration-300;
-}
-
-/* 🏠 Homepage Headings */
-@utility text-home-heading-large {
-  font-size: 48px;
-  font-weight: 600;
-  line-height: 1.2;
-}
-
-@utility text-home-heading-small {
-  font-size: 28px;
-  font-weight: 500;
-  line-height: 1.3;
 }
 
 /* 🧱 Container Utility */

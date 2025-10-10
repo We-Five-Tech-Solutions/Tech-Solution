@@ -1,4 +1,3 @@
-// src/pages/Home.jsx
 import Hero from "../Components/Hero";
 import Footer from "../Components/Footer";
 import Services from "../Components/Services";
