@@ -78,9 +78,8 @@ const ServiceDetailInfo = () => {
           Discover Our Expertise
         </h1>
         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-          We offer a full range of digital services designed to elevate your
-          business. From development to design, our experts ensure every detail
-          aligns with your goals.
+         At Five Spark Software Solutions, we deliver Smart. Secure. Scalable. digital solutions that empower businesses to grow and innovate. From software development to creative design, our expert team ensures every project aligns with your goals, drives results, and exceeds expectations.
+         We combine innovation, reliability, and rapid delivery to provide services that help your business succeed in today’s digital world.
         </p>
       </section>
 
