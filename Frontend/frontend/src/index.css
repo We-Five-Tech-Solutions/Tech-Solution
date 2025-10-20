@@ -20,6 +20,19 @@
   --container-padding-2xl: 6rem;
 }
 
+@keyframes marquee{
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  .animate-marquee {
+    animation: marquee 18s linear infinite;
+  }
+
+
 /* 🔠 Global Font */
 body {
   font-family: var(--font-poppins);

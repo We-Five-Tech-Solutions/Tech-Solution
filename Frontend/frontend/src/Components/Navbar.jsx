@@ -25,13 +25,13 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 w-full z-50 transition-all duration-300 ${
         scrolled ? "bg-white/95 shadow-md py-2" : "bg-white py-3"
       }`}
     >
-      <div className="container mx-auto flex justify-between items-center px-4 md:px-6">
+      <div className="w-full container mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8 ">
         {/* Logo */}
-        <Link to="/" onClick={() => setOpen(false)}>
+        <Link to="/">
           <img
             src={LOGO}
             alt="Logo"
@@ -39,49 +39,45 @@ export default function Navbar() {
           />
         </Link>
 
-        {/* Desktop Menu */}
-        <ul className="hidden lg:flex items-center gap-8">
-          {NavbarMenu.map((menu) => (
-            <li key={menu.id}>
-              <Link
-                to={menu.path}
-                className="text-gray-700 text-base xl:text-lg font-medium hover:text-navHover transition-colors duration-300"
-              >
-                {menu.title}
-              </Link>
-            </li>
-          ))}
-        </ul>
-
         {/* Mobile Toggle */}
         <button
           onClick={toggleMenu}
-          className="lg:hidden text-3xl text-gray-800 z-[60] focus:outline-none"
+          className="md:hidden text-3xl text-gray-800 p-2 focus:outline-none"
           aria-label="Toggle menu"
         >
           {open ? <IoMdClose /> : <IoMdMenu />}
         </button>
+
+        {/* Desktop Menu */}
+        <div className="hidden md:flex items-center gap-8">
+          {NavbarMenu.map((menu) => (
+            <a
+              key={menu.id}
+              href={menu.path}
+              className="text-gray-700 text-base xl:text-lg font-medium hover:text-navHover transition-colors duration-300"
+            >
+              {menu.title}
+            </a>
+          ))}
+        </div>
       </div>
 
       {/* ✅ Mobile Menu  */}
-      <div
-        className={`fixed inset-0 flex flex-col items-center justify-center bg-white/95 backdrop-blur-md cursor-pointer gap-8 transition-all duration-500 ease-in-out ${
-          open
-            ? "translate-y-0 opacity-100 visible"
-            : "-translate-y-full opacity-0 invisible"
-        }`}
-      >
-        {NavbarMenu.map((menu) => (
-          <Link
-            key={menu.id}
-            to={menu.path}
-            className="text-2xl sm:text-3xl font-semibold text-gray-800 hover:text-navHover transition-colors duration-300"
-            onClick={() => setOpen(false)}
-          >
-            {menu.title}
-          </Link>
-        ))}
-      </div>
+      {open && (
+        <div className="md:hidden bg-white border-t border-gray-100 py-4">
+          <div className="container mx-auto px-4 space-y-2">
+            {NavbarMenu.map((menu) => (
+              <a
+                key={menu.id}
+                href={menu.path}
+                className="block text-sm font-medium py-2"
+              >
+                {menu.title}
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
     </nav>
   );
 }

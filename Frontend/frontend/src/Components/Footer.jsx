@@ -1,6 +1,23 @@
-import { Link } from "react-router-dom";
-import { FaLinkedin, FaFacebook, FaTwitter, FaWhatsapp } from "react-icons/fa";
-
+import { FaLinkedin, FaFacebook, FaWhatsapp } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+const quickLinks = [
+  {
+    name: "Home",
+    href: "/",
+  },
+  {
+    name: "About",
+    href: "/about",
+  },
+  {
+    name: "Services",
+    href: "/services",
+  },
+  {
+    name: "Contact",
+    href: "/contact",
+  },
+];
 export default function Footer() {
   return (
     <footer className="w-full bg-gray-900 text-white">
@@ -21,26 +38,13 @@ export default function Footer() {
         <div>
           <h2 className="text-xl font-semibold mb-4">Quick Links</h2>
           <ul className="space-y-2 text-gray-400">
-            <li>
-              <a href="/" className="hover:text-white transition">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="/about" className="hover:text-white transition">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="/services" className="hover:text-white transition">
-                Services
-              </a>
-            </li>
-            <li>
-              <a  href="/contact" className="hover:text-white transition">
-                Contact
-              </a>
-            </li>
+            {quickLinks.map((link, index) => (
+              <li key={index}>
+                <a href={link.href} className="hover:text-white transition">
+                  {link.name}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
 
@@ -73,7 +77,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="hover:text-sky-400 transition"
             >
-              <FaTwitter />
+              <FaXTwitter />
             </a>
             <a
               href="https://linkedin.com/"
