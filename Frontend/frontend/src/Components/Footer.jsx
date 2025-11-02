@@ -1,5 +1,5 @@
-import { FaLinkedin, FaFacebook, FaWhatsapp } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaLinkedin, FaFacebook, FaWhatsapp,FaInstagram } from "react-icons/fa";
+// import { FaXTwitter } from "react-icons/fa6";
 const quickLinks = [
   {
     name: "Home",
@@ -53,7 +53,7 @@ export default function Footer() {
           <h2 className="text-xl font-semibold mb-4">Follow Us</h2>
           <div className="flex space-x-4 text-xl">
             <a
-              href="https://wa.me/"
+              href="https://wa.me/919985258526?text=Hello!%20I%20would%20like%20to%20know%20more%20about%20your%20services."
               aria-label="WhatsApp"
               target="_blank"
               rel="noopener noreferrer"
@@ -62,7 +62,7 @@ export default function Footer() {
               <FaWhatsapp />
             </a>
             <a
-              href="https://facebook.com/"
+              href="https://www.facebook.com/profile.php?id=61582858457246"
               aria-label="Facebook"
               target="_blank"
               rel="noopener noreferrer"
@@ -71,16 +71,16 @@ export default function Footer() {
               <FaFacebook />
             </a>
             <a
-              href="https://twitter.com/"
+              href="https://www.instagram.com/fivespark_software_solutions/"
               aria-label="Twitter"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-sky-400 transition"
             >
-              <FaXTwitter />
+              <FaInstagram />
             </a>
             <a
-              href="https://linkedin.com/"
+              href="https://www.linkedin.com/company/five-spark-software-solutions"
               aria-label="LinkedIn"
               target="_blank"
               rel="noopener noreferrer"
